@@ -1,0 +1,21 @@
+{
+  "name": "test-backend-api",
+  "version": "1.0.0",
+  "scripts": {
+    "layers-common": "cd ./layers/common/nodejs && rmdir /s /q node_modules & npm ci",
+    "layers": "npm install & npm run layers-common"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beebs-Company/test-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Beebs-Company/test-backend/issues"
+  },
+  "homepage": "https://github.com/Beebs-Company/test-backend-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.6.0"
+  },
+  "devDependencies": {}
+}

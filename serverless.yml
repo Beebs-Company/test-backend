@@ -1,0 +1,60 @@
+service: test-backend-api
+
+provider:
+  name: aws
+  lambdaHashingVersion: "20201221"
+  runtime: nodejs14.x
+  stage: ${opt:stage, 'dev'}
+  region: eu-west-1
+  profile: beebs
+  timeout: 25 
+
+package:
+  patterns:
+    - "!node_modules/**"
+    - "!secrets.yml"
+    - "!readme.md"
+    - "!.eslintrc.js"
+
+configValidationMode: warn
+
+layers:
+  testBackendCommon:
+    path: layers/common
+    compatibleRuntimes:
+      - nodejs14.x
+    
+functions:
+  getCarts:
+    handler: src/index.handler
+    layers:
+      - {Ref: TestBackendCommonLambdaLayer}
+    events:
+      - http:
+          path: /carts
+          method: get
+  getParams:
+    handler: src/index.handler
+    layers:
+      - {Ref: TestBackendCommonLambdaLayer}
+    events:
+      - http:
+          path: /params
+          method: get
+  getPricingsByWeight:
+    handler: src/index.handler
+    layers:
+      - {Ref: TestBackendCommonLambdaLayer}
+    events:
+      - http:
+          path: /pricings-by-weight
+          method: get
+  getUser:
+    handler: src/index.handler
+    layers:
+      - {Ref: TestBackendCommonLambdaLayer}
+    events:
+      - http:
+          path: /user/{id}
+          method: get
+
