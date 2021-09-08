@@ -13,7 +13,7 @@ Créer une fonction js qui va calculer pour chaque **cart**, le montant à payer
     - un pourcentage **VARIABLE_BUYER_FEE** appliqué à la somme des produits qui composent le cart.
 
   - Les frais de livraison
-    - Les frais de port sont calculés à partir du poid du cart. Les frais de port peuvent être offert si :
+    - Les frais de port sont calculés à partir du poids du cart. Les frais de port peuvent être offert si :
       - la valeur du cart est supérieure à **FREE_SHIPPING_MIN_AMOUNT** 
       - si l'utilisateur possède des **shippingCredit**
 

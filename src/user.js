@@ -21,8 +21,7 @@ module.exports = {
         shippingCredit: 1,
         walletBalance: 15.25,
       },
-    };
-    
+    };    
 
     res.send({
       success: true,
