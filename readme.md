@@ -5,7 +5,7 @@
 Créer une fonction js qui va calculer pour chaque **cart**, le montant à payer par carte bancaire (**payinAmount**).
 
 ## Calcul du prix à payer d'un **cart**
-- Calculer le prix total des produits, un cart peut comprend 1 ou plusieurs produits
+- Calculer le prix total des produits, un cart peut comprendre 1 ou plusieurs produits
 
 - Sur le cart des frais sont appliqués. Les frais sont composés de :
   - La protection acheteur
