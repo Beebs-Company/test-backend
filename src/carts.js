@@ -90,7 +90,7 @@ module.exports = {
           ],
           userId: 2,
         },
-        // n product > free shipping + shipping credit
+        // n product > free shipping + shipping credit => (15 + 19.95 + 4.95)*(1.05) + (.7) + (-0) + (0) = 42.60 [42.595]
         { 
           id: 6, 
           products: [
@@ -99,7 +99,7 @@ module.exports = {
               weight: 200,
             },
             {
-              price: 9.95,
+              price: 19.95,
               weight: 50,
             },
             {
@@ -149,7 +149,7 @@ module.exports = {
         },
         // n product > free shipping + wallet balance => to pay (15 + 9.95 + 5.95)*(1.05) + (.7) + (-15.25) + (0) = 17.90 [17.895000000000003]
         { 
-          id: 8, 
+          id: 9, 
           products: [
             {
               price: 15,
@@ -168,7 +168,7 @@ module.exports = {
         },
         // n product < free shipping + shippingCredit => to pay (5.95)*(1.05) + (.7) + (-0) + (0) = 6.95 [6.947500000000001]
         { 
-          id: 9, 
+          id: 10, 
           products: [
             {
               price: 5.95,
@@ -179,7 +179,7 @@ module.exports = {
         },
         // n product < free shipping => to pay (15)*(1.05) + (.7) + (-0) + (4.99) = 21.44 [21.439999999999998]
         { 
-          id: 10, 
+          id: 11, 
           products: [
             {
               price: 15,
