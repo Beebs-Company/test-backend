@@ -10,7 +10,7 @@ Créer une fonction js qui va calculer pour chaque **cart**, le montant à payer
 - Sur le cart des frais sont appliqués. Les frais sont composés de :
   - La protection acheteur
     - une part fixe **FIXED_BUYER_FEE**
-    - un pourcentage **VARIABLE_BUYER_FEE** appliqué à la somme des produits qui composent le cart.
+    - un pourcentage **VARIABLE_BUYER_FEE** appliqué à la somme des prix des produits qui composent le cart.
 
   - Les frais de livraison
     - Les frais de port sont calculés à partir du poids du cart. Les frais de port peuvent être offert si :
