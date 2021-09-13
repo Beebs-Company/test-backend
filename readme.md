@@ -2,7 +2,7 @@
 
 ## Objectif 
 
-Créer une fonction js qui va calculer pour chaque **cart**, le montant à payer par carte bancaire (**payinAmount**).
+Créer un script nodejs qui va calculer pour chaque **cart**, le montant à payer par carte bancaire (**payinAmount**).
 
 ## Calcul du prix à payer d'un **cart**
 - Calculer le prix total des produits, un cart peut comprendre 1 ou plusieurs produits
@@ -31,7 +31,9 @@ Les données sont fournies par l'api https://xubyxv3op5.execute-api.eu-west-1.am
 
 ## Résultat attendu 
 
-La fonction doit retourner un tableau d'objet js avec le format suivant : 
+Dans un dépôt github : le code et un readme.md expliquant comment le lancer.
+
+Le script doit afficher dans la console un tableau d'objet js avec le format suivant : 
 
 ```
 [{ cartId, payinAmount }, ...]
